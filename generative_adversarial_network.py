@@ -63,7 +63,7 @@ discriminator_loss = discriminator.fit(X, y, nb_epoch=2)
 ## Training
 for step in range(num_steps):
     # Train the discriminator on a mix of fake and real data
-    for _ in range(1):
+    for _ in range(2):
         noise_batch = noise[np.random.randint(num_examples, size=batch_size)]
         data_batch = data[np.random.randint(num_examples, size=batch_size)]
         data_labels = np.ones(batch_size).astype(int)
